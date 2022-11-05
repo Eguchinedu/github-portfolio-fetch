@@ -1,4 +1,6 @@
 import React from 'react'
+import ErrorFallback from './ErrorFallback';
+import '../styles/ErrorBoundary.css'
 // import {Link} from 'react-router-dom'
 
 export class ErrorBoundary extends React.Component {
@@ -20,8 +22,9 @@ export class ErrorBoundary extends React.Component {
     if (this.state.errorInfo) {
       // Error path
       return (
-        <div>
-            <h1 className="error">Oops!!something went wrong!!</h1>
+        <div className='Error-boundary'>
+            {/* <h1 className="error">Oops!!something went wrong!!</h1> */}
+            <ErrorFallback/>
             
           <details style={{ whiteSpace: "pre-wrap" }}>
             {this.state.error && this.state.error.toString()}
