@@ -6,32 +6,42 @@
   flex-wrap: wrap;
 }
 .paginate {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px 0px;
 }
 .paginate button {
-    border: none;
-    background-color: #39a2db;
-    color: #ffffff;
-    padding: 8px 25px;
-    font-weight: 500;
-    font-size: 16px;
-    margin: 0 3px;
-    border-radius: 20px;
-    transition: 0.3s ease-in;
-    cursor: pointer;
+  border: none;
+  background-color: #ffffff;
+  color: #073944;
+  padding: 8px 25px;
+  font-weight: 500;
+  font-size: 16px;
+  margin: 0 3px;
+  border-radius: 20px;
+  transition: 0.3s ease-in;
+  border: 2px solid #073944;
+  cursor: pointer;
 }
 .paginate button:hover {
-      background-color: #ffffff;
-    color: #073944;
-    border: 1px solid #073944;
+  background-color: #39a2db;
+  border: none;
+  color: #ffffff;
 }
 .paginate button:disabled {
-    background-color: #eff4f7;
+  background-color: #eff4f7;
+  border: none;
+  color: grey;
+  cursor: not-allowed;
+}
+
+@media only screen and (max-width: 600px) {
+  .paginate button {
+    background-color: #39a2db;
+    color: #ffffff;
     border: none;
-    color: grey;
-    cursor: not-allowed;
-    }
+    font-size: 15px;
+  }
+}

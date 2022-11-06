@@ -22,6 +22,14 @@ function ErrorBoundaryDisplay() {
           <ErrorBoundaryComponent heroName="Joker" />
         </ErrorBoundary>
 
+        <ErrorBoundary>
+          <ErrorBoundaryComponent heroName="Wonder-Woman" />
+        </ErrorBoundary>
+
+        <ErrorBoundary>
+          <ErrorBoundaryComponent heroName="Flash" />
+        </ErrorBoundary>
+
         <div className="button-section">
           <Link to="/" className="btn">
             Back to Home

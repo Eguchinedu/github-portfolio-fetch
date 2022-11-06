@@ -3,7 +3,8 @@
 }
 
 body {
-  background-color: #eff4f7;
+  /* background-color: #eff4f7; */
+  background-color: #ffffff;
   color: #073944;
   max-width: 1200px;
   margin: 0 auto;
@@ -11,6 +12,7 @@ body {
 .btn {
   background-color: #ffffff;
   border-radius: 20px;
+  border: 2px solid #073944;
   padding: 8px 25px;
   margin: 10px;
   text-decoration: none;
@@ -20,12 +22,14 @@ body {
 }
 .btn:hover {
   background-color: #39a2db;
+  border: none;
   color: #ffffff;
 }
 @media only screen and (max-width: 600px) {
   a.btn {
     background-color: #39a2db;
     color: #ffffff;
+    border: none;
     font-size: 15px;
   }
 }
