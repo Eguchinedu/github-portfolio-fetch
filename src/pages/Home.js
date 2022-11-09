@@ -28,6 +28,16 @@ function Home() {
           </Link>
         </div>
       </div>
+      <div className="container">
+        <div className="row">
+          <h2>Click Below to view 404 Page</h2>
+        </div>
+        <div className="row">
+          <Link to="*" className="btn">
+            View
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

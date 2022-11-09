@@ -27,18 +27,26 @@ export const Results = ({profiles, loading}) => {
           <img src={profiles.avatar_url} alt={profiles.name} />
         </div>
         <div className="profile-text">
-          <h3>Hi! I'm {profiles.name}</h3>
+          <h3>Hi! My Name is {profiles.name}</h3>
+          <br />
+          <p>Followers: {profiles.followers}</p>
+          <p>Followering: {profiles.following}</p>
+          <p>Public Repos: {profiles.public_repos}</p>
+          <br />
+          <br />
+          <h4>About Me:</h4>
+          <br/>
           <p>
             I'm a frontend developer, currently studying in Altschool Africa,
             i'm skilled in HTML, CSS and Javascript. Here's a quick summary
-            about me: <br/> 😊 Pronouns: He/him 💡 Fun fact: I'm currently studying at
-            AltSchool Africa School of Software Engineering Class of 2022. 🌱
-            I’m currently learning JavaScript and Reactjs. 😊 I’m looking for
-            help with open source projects, hackathons, internships, and
-            entry-level opportunities. 💼 Job interests: Software Engineer,
+            about me: <br /> 😊 Pronouns: He/him 💡 Fun fact: I'm currently
+            studying at AltSchool Africa School of Software Engineering Class of
+            2022. 🌱 I’m currently learning JavaScript and Reactjs. 😊 I’m
+            looking for help with open source projects, hackathons, internships,
+            and entry-level opportunities. 💼 Job interests: Software Engineer,
             Front Engineer, or UI Engineer (Intern or Junior level). 📫 You can
             contact me by emailing eguchinedu18@gmail.com.
-            <br/> Click Below to view my Github Repo
+            <br /> Click Below to view my Github Repo
           </p>
           <div className="button-section">
             <Link to="/repos/1" className="btn">
