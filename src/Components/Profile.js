@@ -30,7 +30,7 @@ export const Results = ({profiles, loading}) => {
           <h3>Hi! My Name is {profiles.name}</h3>
           <br />
           <p>Followers: {profiles.followers}</p>
-          <p>Followering: {profiles.following}</p>
+          <p>Following: {profiles.following}</p>
           <p>Public Repos: {profiles.public_repos}</p>
           <br />
           <br />
